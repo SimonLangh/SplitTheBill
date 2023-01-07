@@ -10,4 +10,5 @@ The app is deployed here:
 https://simon-langhendries.shinyapps.io/SplitTheBill/
 
 Have fun with it!
+
 Simon
