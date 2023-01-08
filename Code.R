@@ -192,7 +192,13 @@ ui <- fluidPage(
 
   fluidRow(
     column(12, align="center", h3("Transactions"),
-      tableOutput("Transactions")))
+      tableOutput("Transactions"))),
+  
+  tags$head(
+    tags$style(HTML("hr {border-top: 1px solid #000000;}"))
+  ),
+  hr(),
+  h6("Webapp developed by Simon", align = "right")
 )
 
 # Define server logic required to draw a histogram
@@ -278,5 +284,3 @@ server <- function(input, output) {
 
 # Run the application 
 shinyApp(ui = ui, server = server)
-
-
